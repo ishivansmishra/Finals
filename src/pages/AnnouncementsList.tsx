@@ -26,7 +26,7 @@ const AnnouncementsList = () => {
       <ul>
         {data.data.map((ann: any) => (
           <li key={ann.id} style={{ marginBottom: "1rem" }}>
-            <Link to={`/announcement/${ann.id}`}>{ann.title}</Link>
+            <Link to={`/announcements/${ann.id}`}>{ann.title}</Link>
             <p>
               Comments: {ann.commentCount} | ❤️ {ann.reactions.heart || 0} 👍 {ann.reactions.up || 0} 👎 {ann.reactions.down || 0}
             </p>
